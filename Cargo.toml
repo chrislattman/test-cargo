@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "driver",
+    "fraction"
+]
+resolver = "2"

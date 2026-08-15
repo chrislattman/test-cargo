@@ -1,0 +1,28 @@
+[package]
+name = "driver"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+# If this was a library, the feature could be enabled like
+#
+# [dependencies]
+# driver = { version = "0.1.0", features = ["my_testing_flag"] }
+#
+# Or it could be passed down this way:
+#
+# [features]
+# enable_testing = ["driver/my_testing_flag"]
+#
+# Now if the entire dependency is only needed if some feature is enabled:
+#
+# [features]
+# my_feature = ["dep:driver"]
+#
+# [dependencies]
+# driver = { version = "0.1.0", optional = true }
+my_testing_flag = []
+
+[dependencies]
+fraction = { path = "../fraction" }
